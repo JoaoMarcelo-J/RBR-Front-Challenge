@@ -1,0 +1,39 @@
+{
+  "name": "website",
+  "private": true,
+  "scripts": {
+    "prebuild": "tsc",
+    "build": "next build",
+    "postbuild": "next-sitemap",
+    "commit": "git-cz",
+    "dev": "next dev",
+    "start": "next start",
+    "lint": "next lint",
+    "sitemap": "next-sitemap",
+    "format": "npx prettier '**/*.js' --write"
+  },
+  "dependencies": {
+    "@chakra-ui/react": "^2.2.1",
+    "@emotion/react": "^11.9.3",
+    "@emotion/styled": "^11.9.3",
+    "axios": "^0.27.2",
+    "framer-motion": "^6.3.16",
+    "immer": "^9.0.15",
+    "next": "12.2.0",
+    "next-seo": "^5.4.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-responsive": "^9.0.0-beta.10",
+    "sharp": "^0.30.7",
+    "use-immer": "^0.7.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.0.0",
+    "@types/react": "^18.0.14",
+    "eslint": "8.18.0",
+    "eslint-config-next": "12.2.0",
+    "git-cz": "^4.9.0",
+    "next-sitemap": "3.1.7",
+    "typescript": "^4.7.4"
+  }
+}
