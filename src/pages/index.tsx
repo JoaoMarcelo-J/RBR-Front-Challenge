@@ -1,5 +1,6 @@
 import { AppLayout } from "components/layouts";
 import { Header } from "components/modules/header";
+import { Home } from "components/pages/home";
 
 import { useApplicationContext } from "contexts/ApplicationContext";
 
@@ -9,7 +10,9 @@ export default function Page() {
   return (
     <>
       <Header />
-      <AppLayout>hello world</AppLayout>
+      <AppLayout>
+        <Home />
+      </AppLayout>
     </>
   );
 }

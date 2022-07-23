@@ -7,6 +7,7 @@ export const Header = () => {
   return (
     <Box
       right="0"
+      mb="60px"
       paddingY="2.3rem"
       left="0"
       top="0"
