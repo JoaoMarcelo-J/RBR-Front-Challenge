@@ -1,4 +1,6 @@
-import { Box, Text, Select } from "@chakra-ui/react";
+import { ChevronDownIcon } from "@chakra-ui/icons";
+import { Text, Menu, MenuButton, MenuList, MenuItem } from "@chakra-ui/react";
+
 import React from "react";
 
 interface NavLinkProps {
@@ -26,11 +28,18 @@ export const NavLink = ({
         {content}
       </Text>
     ) : (
-      <Select
-        _hover={{ opacity: "0.6" }}
-        variant="unstyled"
-        placeholder={content}
-      />
+      <Menu
+        // _hover={{ opacity: "0.6" }}
+        // variant="unstyled"
+        isLazy
+      >
+        <MenuButton>
+          {content} <ChevronDownIcon />
+        </MenuButton>
+        <MenuList>
+          <MenuItem>Teste</MenuItem>
+        </MenuList>
+      </Menu>
     )}
   </>
 );
