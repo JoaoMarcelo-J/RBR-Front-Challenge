@@ -1,6 +1,6 @@
-import { Heading } from "@chakra-ui/react";
-import FirstExample from "components/pages/home/FirstExample";
-import SecondExample from "components/pages/home/SecondExample";
+import { AppLayout } from "components/layouts";
+import { Header } from "components/modules/header";
+
 import { useApplicationContext } from "contexts/ApplicationContext";
 
 export default function Page() {
@@ -8,9 +8,8 @@ export default function Page() {
 
   return (
     <>
-      <Heading>Next Boilerplate!</Heading>
-      <FirstExample />
-      {isMobile ? <SecondExample /> : null}
+      <Header />
+      <AppLayout>hello world</AppLayout>
     </>
   );
 }

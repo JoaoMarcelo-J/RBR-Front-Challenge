@@ -2,9 +2,9 @@ import { extendTheme } from "@chakra-ui/react";
 
 const theme = extendTheme({
   fonts: {
-    body: "Inter, sans-serif",
-    heading: "Inter, sans-serif",
-    mono: "Inter, sans-serif"
+    body: "Rubik, sans-serif",
+    heading: "Rubik, sans-serif",
+    mono: "Rubik, sans-serif",
   },
   colors: {
     primary: {
@@ -16,24 +16,24 @@ const theme = extendTheme({
       600: "#D7A24C",
       700: "#BF9043",
       800: "#A77E3B",
-      900: "#8F6C32"
-    }
+      900: "#8F6C32",
+    },
   },
   components: {
     Button: {
       baseStyle: {
-        fontFamily: "Inter, sans-serif",
+        fontFamily: "Rubik, sans-serif",
         _focus: {
           outline: "none",
-          boxShadow: "unset"
-        }
-      }
+          boxShadow: "unset",
+        },
+      },
     },
     a: {
       _hover: {
-        texteDecoration: "none"
-      }
-    }
+        texteDecoration: "none",
+      },
+    },
   },
   breakpoints: {
     sm: "30em", // starts at 480px
@@ -41,8 +41,8 @@ const theme = extendTheme({
     lg: "62em", // starts at 992px
     xl: "80em", // starts at 1280px
     "2xl": "96em", // starts at 1536px
-    "3xl": "112em" // starts at 1792px
-  }
+    "3xl": "112em", // starts at 1792px
+  },
 });
 
 export default theme;
