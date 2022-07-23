@@ -29,22 +29,13 @@ export const FeaturedNewsCard = () => {
         <Text fontSize="1.25rem" as="p">
           Parents sue Sisolak, CCSD over mask order in schools
         </Text>
-        <HStack gap="10px">
-          <Flex
-            gap="10px"
-            align="center"
-            fontSize={{ lg: "1rem", sm: "0.75rem" }}
-          >
-            <TimeIcon /> 4 min
-          </Flex>
-          <Flex
-            gap="10px"
-            align="center"
-            fontSize={{ lg: "1rem", sm: "0.75rem" }}
-          >
-            <CalendarIcon /> Saturday, July 17, 2021
-          </Flex>
-        </HStack>
+        <Flex
+          gap="10px"
+          align="center"
+          fontSize={{ lg: "0.875rem", sm: "0.75rem" }}
+        >
+          <CalendarIcon /> Saturday, July 17, 2021
+        </Flex>
       </Flex>
     </Flex>
   );

@@ -6,8 +6,8 @@ import {
   Text,
   HStack,
   useBreakpointValue,
+  Button,
 } from "@chakra-ui/react";
-import { Button } from "@chakra-ui/react";
 
 export const CarrouselNews = () => {
   const isWideVersion = useBreakpointValue({
