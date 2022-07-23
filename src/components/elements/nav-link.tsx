@@ -6,6 +6,7 @@ import React from "react";
 interface NavLinkProps {
   isDropDown?: boolean;
   content: string;
+  fontSize?: string;
   onClick?: () => void;
 }
 
@@ -13,12 +14,13 @@ export const NavLink = ({
   isDropDown = false,
   content,
   onClick,
+  fontSize,
 }: NavLinkProps) => (
   <>
     {!isDropDown ? (
       <Text
         as="a"
-        fontSize="1rem"
+        fontSize={fontSize || "1.rem"}
         color="#000"
         cursor="pointer"
         _hover={{ opacity: "0.6" }}
@@ -28,12 +30,8 @@ export const NavLink = ({
         {content}
       </Text>
     ) : (
-      <Menu
-        // _hover={{ opacity: "0.6" }}
-        // variant="unstyled"
-        isLazy
-      >
-        <MenuButton>
+      <Menu isLazy>
+        <MenuButton fontSize={fontSize}>
           {content} <ChevronDownIcon />
         </MenuButton>
         <MenuList>

@@ -1,11 +1,23 @@
 import { CalendarIcon, LinkIcon, TimeIcon } from "@chakra-ui/icons";
-import { Box, Flex, Img, Text, HStack } from "@chakra-ui/react";
-import { Button, ButtonGroup } from "@chakra-ui/react";
+import {
+  Box,
+  Flex,
+  Img,
+  Text,
+  HStack,
+  useBreakpointValue,
+} from "@chakra-ui/react";
+import { Button } from "@chakra-ui/react";
 
 export const CarrouselNews = () => {
+  const isWideVersion = useBreakpointValue({
+    base: false,
+    lg: true,
+  });
+
   return (
-    <Flex w="100%">
-      <Box w="50%" position="relative">
+    <Flex w="100%" flexDirection={isWideVersion ? "row" : "column"}>
+      <Box w={isWideVersion ? "50%" : "100%"} position="relative">
         <Button
           color="white"
           top="5"
@@ -19,16 +31,20 @@ export const CarrouselNews = () => {
         >
           Share
         </Button>
-        <Img src="/pictures/carrousel-img.png" />
+        <Img
+          h={isWideVersion ? "455px" : "370px"}
+          w="100%"
+          src="/pictures/carrousel-img.png"
+        />
       </Box>
       <Flex
         position="relative"
         gap="20px"
-        w="50%"
+        w={isWideVersion ? "50%" : "100%"}
         maxH="454px"
         bg="#000"
         flexDirection="column"
-        padding="80px 126px"
+        padding={isWideVersion ? "40px 80px" : "30px 16px"}
         color="#fff"
       >
         <Text
@@ -47,20 +63,32 @@ export const CarrouselNews = () => {
         >
           Latest
         </Text>
-        <Text as="h2" fontSize="2.5rem" lineHeight="1.2">
+        <Text
+          as="h2"
+          fontSize={isWideVersion ? "2.5rem" : "1.8rem"}
+          lineHeight="1.2"
+        >
           Report: More vaccine deaths last week than COVID-19 deaths
         </Text>
-        <Text as="p" fontSize="1rem">
+        <Text as="p" fontSize={isWideVersion ? "1rem" : "0.875rem"}>
           In a span of one week, the number of deaths due to COVID-19 vaccines
           reported to the government’s database outnumbered the official count
           of deaths due to the virus.
         </Text>
 
         <HStack gap="30px">
-          <Flex gap="10px" align="center">
+          <Flex
+            gap="10px"
+            align="center"
+            fontSize={isWideVersion ? "1rem" : "0.75rem"}
+          >
             <TimeIcon /> 4 min
           </Flex>
-          <Flex gap="10px" align="center">
+          <Flex
+            gap="10px"
+            align="center"
+            fontSize={isWideVersion ? "1rem" : "0.75rem"}
+          >
             <CalendarIcon /> Saturday, July 17, 2021
           </Flex>
         </HStack>
@@ -72,7 +100,7 @@ export const CarrouselNews = () => {
           position="absolute"
           bottom="0"
           right="0"
-          size="md"
+          size={isWideVersion ? "md" : "sm"}
         >
           READ MORE
         </Button>
