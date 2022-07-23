@@ -1,7 +1,7 @@
 const baseUrl = "http://localhost:3000";
 
 export const websiteData = {
-  homeTitle: "Website",
+  homeTitle: "JOEY GILBERT",
   titleLabel: "Website",
   baseUrl,
   locale: "en_US",
@@ -13,20 +13,20 @@ export const websiteData = {
       url: baseUrl + "/default-og.webp",
       width: 1920,
       height: 1080,
-      alt: "Sunt sint occaecat in laboris consectetur ea id aliquip enim ea cupidatat laboris exercitation occaecat."
-    }
+      alt: "Sunt sint occaecat in laboris consectetur ea id aliquip enim ea cupidatat laboris exercitation occaecat.",
+    },
   ],
   twitter: {
     summary:
       "Commodo sunt officia esse sit non mollit laborum commodo aute amet ex magna qui Lorem. Est adipisicing ex mollit labore pariatur excepteur consectetur sint. Ullamco sint irure esse aliquip esse consectetur id sit adipisicing deserunt.",
     site: "Website",
-    handle: "@website"
+    handle: "@website",
   },
   favicons: [
     {
       rel: "icon",
       href: "/favicon.png",
-      sizes: "64x64"
-    }
-  ]
+      sizes: "64x64",
+    },
+  ],
 };

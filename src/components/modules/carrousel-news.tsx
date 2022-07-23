@@ -61,7 +61,7 @@ export const CarrouselNews = () => {
           fontSize="1rem"
           as="h4"
         >
-          Latest
+          LATEST
         </Text>
         <Text
           as="h2"

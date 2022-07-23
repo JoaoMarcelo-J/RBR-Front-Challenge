@@ -24,14 +24,14 @@ function Application({ Component, pageProps }) {
             url: websiteData.baseUrl,
             site_name: websiteData.ogTitle,
             description: websiteData.ogDescription,
-            images: websiteData.ogDefaultImages
+            images: websiteData.ogDefaultImages,
           }}
           twitter={
             websiteData.twitter
               ? {
                   cardType: websiteData.twitter.summary,
                   site: websiteData.twitter.site,
-                  handle: websiteData.twitter.handle
+                  handle: websiteData.twitter.handle,
                 }
               : undefined
           }

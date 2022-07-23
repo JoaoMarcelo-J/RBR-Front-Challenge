@@ -2,6 +2,7 @@ import { CarrouselNews } from "components/modules/carrousel-news";
 import "@splidejs/react-splide/css";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import { Box, Flex, useBreakpointValue } from "@chakra-ui/react";
+import { FeaturedNews } from "components/modules/featured-news";
 
 export const Home = () => {
   const isWideVersion = useBreakpointValue({
@@ -27,6 +28,7 @@ export const Home = () => {
           <CarrouselNews />
         </SplideSlide>
       </Splide>
+      <FeaturedNews />
     </Box>
   );
 };
