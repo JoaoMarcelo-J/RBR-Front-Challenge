@@ -31,7 +31,7 @@ export const Header = () => {
   return (
     <Box
       right="0"
-      mb="60px"
+      mb={{ base: "0", lg: "64px" }}
       paddingY={isWideVersion ? "2.3rem" : "1rem"}
       left="0"
       top="0"

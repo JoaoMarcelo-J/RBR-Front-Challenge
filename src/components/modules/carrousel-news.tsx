@@ -76,7 +76,7 @@ export const CarrouselNews = () => {
           of deaths due to the virus.
         </Text>
 
-        <HStack gap="30px">
+        <HStack gap={{ base: "1rem", lg: "30px" }}>
           <Flex
             gap="10px"
             align="center"

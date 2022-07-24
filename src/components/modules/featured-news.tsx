@@ -1,4 +1,4 @@
-import { Divider, HStack } from "@chakra-ui/react";
+import { Divider, HStack, Stack } from "@chakra-ui/react";
 import { FeaturedNewsCard } from "components/elements/featured-news-card";
 import React from "react";
 
@@ -6,11 +6,15 @@ export const FeaturedNews = () => {
   return (
     <>
       <Divider orientation="horizontal" borderColor="#707070" marginY="30px" />
-      <HStack gap="10px" paddingX="20px">
+      <Stack
+        direction={{ base: "column", lg: "row" }}
+        gap="10px"
+        paddingX="20px"
+      >
         <FeaturedNewsCard />
         <FeaturedNewsCard />
         <FeaturedNewsCard />
-      </HStack>
+      </Stack>
       <Divider orientation="horizontal" marginY="30px" borderColor="#707070" />
     </>
   );
