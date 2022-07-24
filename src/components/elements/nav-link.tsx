@@ -31,7 +31,7 @@ export const NavLink = ({
       </Text>
     ) : (
       <Menu isLazy>
-        <MenuButton fontSize={fontSize}>
+        <MenuButton fontSize={fontSize} _hover={{ opacity: "0.6" }}>
           {content} <ChevronDownIcon />
         </MenuButton>
         <MenuList>
