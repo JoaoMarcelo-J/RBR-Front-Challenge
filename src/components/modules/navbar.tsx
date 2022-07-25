@@ -43,24 +43,12 @@ export const NavBar = () => {
             Menu
           </MenuButton>
           <MenuList>
-            <MenuItem>
-              <NavBarItem content="LATEST" />
-            </MenuItem>
-            <MenuItem>
-              <NavBarItem content="COVID 19" />
-            </MenuItem>
-            <MenuItem>
-              <NavBarItem content="LAW" />
-            </MenuItem>
-            <MenuItem>
-              <NavBarItem content="TECNOLOGY" />
-            </MenuItem>
-            <MenuItem>
-              <NavBarItem content="POLICY" />
-            </MenuItem>
-            <MenuItem>
-              <NavBarItem content="VACCINE" />
-            </MenuItem>
+            <MenuItem>LATEST</MenuItem>
+            <MenuItem>COVID 19</MenuItem>
+            <MenuItem>LAW</MenuItem>
+            <MenuItem>TECNOLOGY</MenuItem>
+            <MenuItem>POLICY</MenuItem>
+            <MenuItem>VACCINE</MenuItem>
           </MenuList>
         </Menu>
       )}

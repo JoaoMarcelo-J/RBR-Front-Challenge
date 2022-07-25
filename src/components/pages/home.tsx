@@ -4,6 +4,7 @@ import { Splide, SplideSlide } from "@splidejs/react-splide";
 import { Box, Flex, useBreakpointValue } from "@chakra-ui/react";
 import { FeaturedNews } from "components/modules/featured-news";
 import { NavBar } from "components/modules/navbar";
+import { Feed } from "components/modules/feed";
 
 export const Home = () => {
   const isWideVersion = useBreakpointValue({
@@ -31,6 +32,7 @@ export const Home = () => {
       </Splide>
       <FeaturedNews />
       <NavBar />
+      <Feed />
     </Box>
   );
 };
