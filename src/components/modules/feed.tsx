@@ -7,9 +7,9 @@ export const Feed = () => {
   return (
     <Grid
       templateColumns={{ base: "1fr", lg: "repeat(3, 1fr)" }}
-      mt="4rem"
+      mt="3rem"
       paddingX={{ base: "20px", lg: "0px" }}
-      templateRows={{ base: "1fr 1fr", lg: "400px 1200px" }}
+      templateRows={{ base: "1fr 1fr", lg: "400px auto" }}
       columnGap="60px"
       rowGap="80px"
     >

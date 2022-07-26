@@ -17,7 +17,12 @@ export const FeaturedNews = () => {
           <FeaturedNewsCard key={item.title} content={item} variant="regular" />
         ))}
       </Stack>
-      <Divider orientation="horizontal" marginY="30px" borderColor="#707070" />
+      <Divider
+        orientation="horizontal"
+        marginTop="30px"
+        marginBottom="60px"
+        borderColor="#707070"
+      />
     </>
   );
 };
