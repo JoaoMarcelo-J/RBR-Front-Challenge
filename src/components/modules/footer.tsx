@@ -1,4 +1,7 @@
+//Icons
 import { EmailIcon, InfoIcon, PhoneIcon } from "@chakra-ui/icons";
+
+//Components
 import {
   Box,
   Img,
@@ -12,7 +15,6 @@ import {
   Center,
   useBreakpointValue,
 } from "@chakra-ui/react";
-import React from "react";
 
 export const Footer = () => {
   const isWideVersion = useBreakpointValue({

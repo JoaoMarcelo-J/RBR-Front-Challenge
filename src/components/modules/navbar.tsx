@@ -1,4 +1,8 @@
+//Icons
+
 import { ChevronDownIcon, SearchIcon } from "@chakra-ui/icons";
+
+//Components
 import {
   Flex,
   HStack,
@@ -13,7 +17,6 @@ import {
   Button,
 } from "@chakra-ui/react";
 import { NavBarItem } from "components/elements/nav-bar-item";
-import React from "react";
 
 export const NavBar = () => {
   const isWideVersion = useBreakpointValue({

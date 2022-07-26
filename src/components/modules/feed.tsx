@@ -1,7 +1,10 @@
+//Components
 import { Grid, GridItem, VStack } from "@chakra-ui/react";
 import { FeaturedNewsCard } from "components/elements/featured-news-card";
-import { news, headerNews } from "../../constants/";
 import { Popular } from "./popular";
+
+//Mocks
+import { news, headerNews } from "../../constants/";
 
 export const Feed = () => {
   return (

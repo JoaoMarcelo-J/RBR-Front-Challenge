@@ -1,4 +1,7 @@
+//Icons
 import { ChevronDownIcon } from "@chakra-ui/icons";
+
+//Components
 import { Text, Menu, MenuButton, MenuList, MenuItem } from "@chakra-ui/react";
 
 import React from "react";

@@ -1,4 +1,7 @@
+//Components
 import { Input, InputGroup, InputRightElement } from "@chakra-ui/react";
+
+//Icons
 import { SearchIcon } from "@chakra-ui/icons";
 
 export const SearchInput = () => {

@@ -1,5 +1,8 @@
-import { CalendarIcon, TimeIcon } from "@chakra-ui/icons";
-import { Flex, HStack, Img, Text } from "@chakra-ui/react";
+//Images
+import { CalendarIcon } from "@chakra-ui/icons";
+
+//Components
+import { Flex, Img, Text } from "@chakra-ui/react";
 
 interface FeaturedNewsCardProps {
   variant?: "vertical" | "big" | "regular";

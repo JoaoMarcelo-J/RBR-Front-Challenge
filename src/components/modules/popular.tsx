@@ -1,7 +1,8 @@
+//Components
 import { VStack, Text, Divider, Box } from "@chakra-ui/react";
-import React from "react";
-
 import { FeaturedNewsCard } from "components/elements/featured-news-card";
+
+//Mocks
 import { featuredNews } from "../../constants/";
 
 export const Popular = () => {

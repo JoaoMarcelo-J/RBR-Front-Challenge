@@ -1,3 +1,4 @@
+//Components
 import {
   Box,
   Flex,
@@ -18,6 +19,8 @@ import {
 import { Img } from "@chakra-ui/image";
 import { NavLink } from "components/elements/nav-link";
 import { SearchInput } from "components/elements/search-input";
+
+//Icons
 import { HamburgerIcon } from "@chakra-ui/icons";
 
 export const Header = () => {
