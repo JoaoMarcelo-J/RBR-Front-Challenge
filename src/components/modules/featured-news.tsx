@@ -1,6 +1,8 @@
-import { Divider, HStack, Stack } from "@chakra-ui/react";
+import { Divider, Stack } from "@chakra-ui/react";
 import { FeaturedNewsCard } from "components/elements/featured-news-card";
 import React from "react";
+
+import { featuredNews } from "../../constants/";
 
 export const FeaturedNews = () => {
   return (
@@ -11,9 +13,9 @@ export const FeaturedNews = () => {
         gap="10px"
         paddingX="20px"
       >
-        <FeaturedNewsCard />
-        <FeaturedNewsCard />
-        <FeaturedNewsCard />
+        {featuredNews.map((item) => (
+          <FeaturedNewsCard key={item.title} content={item} variant="regular" />
+        ))}
       </Stack>
       <Divider orientation="horizontal" marginY="30px" borderColor="#707070" />
     </>

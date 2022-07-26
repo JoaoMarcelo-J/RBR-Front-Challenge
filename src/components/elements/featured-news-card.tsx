@@ -3,9 +3,10 @@ import { Flex, HStack, Img, Text } from "@chakra-ui/react";
 
 interface FeaturedNewsCardProps {
   variant?: "vertical" | "big" | "regular";
-  content?: {
-    title: string;
-    description: string;
+  content: {
+    title?: string;
+    description?: string;
+    category: string;
     image: string;
   };
 }
@@ -16,8 +17,16 @@ export const FeaturedNewsCard = ({
 }: FeaturedNewsCardProps) => {
   return (
     <Flex
-      h={{ base: "auto", lg: variant === "big" ? "250px" : "277px" }}
-      gap="24px"
+      h={{
+        base: "auto",
+        lg:
+          variant === "big"
+            ? "250px"
+            : variant === "vertical"
+            ? "277px"
+            : "180px",
+      }}
+      gap="44px"
       direction={{
         base: "column",
         lg: variant === "vertical" ? "column" : "row",
@@ -28,7 +37,7 @@ export const FeaturedNewsCard = ({
       <Img
         src={content?.image ? content.image : "/pictures/news-img.png"}
         h="100%"
-        w="100%"
+        w={{ base: "100%", lg: variant === "regular" ? "160px" : "auto" }}
       />
       <Flex flexDirection="column" gap={variant === "big" ? "20px" : "10px"}>
         {variant !== "vertical" && (
@@ -46,11 +55,11 @@ export const FeaturedNewsCard = ({
             fontSize="1rem"
             as="h4"
           >
-            {content?.title ? content.title : "LATEST"}
+            {content?.category}
           </Text>
         )}
         <Text fontSize={{ base: "1rem", lg: "1.2rem" }} as="p">
-          Parents sue Sisolak, CCSD over mask order in schools
+          {content?.title}
         </Text>
         {content?.description && (
           <Text fontSize="0.875rem" as="p">
