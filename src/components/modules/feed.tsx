@@ -11,9 +11,10 @@ export const Feed = () => {
 
   return (
     <Grid
-      templateColumns="repeat(3, 1fr)"
+      templateColumns={{ base: "1fr", lg: "repeat(3, 1fr)" }}
       mt="4rem"
-      templateRows="400px 1200px"
+      paddingX={{ base: "20px", lg: "0px" }}
+      templateRows={{ base: "1fr 1fr", lg: "400px 1200px" }}
       columnGap="60px"
       rowGap="80px"
     >
@@ -26,7 +27,7 @@ export const Feed = () => {
       <GridItem>
         <FeaturedNewsCard variant="vertical" />
       </GridItem>
-      <GridItem colSpan={2}>
+      <GridItem colSpan={{ base: 1, lg: 2 }}>
         <VStack gap="40px">
           <FeaturedNewsCard content={content} variant="big" />
           <FeaturedNewsCard content={content} variant="big" />

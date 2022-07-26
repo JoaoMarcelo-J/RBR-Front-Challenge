@@ -16,28 +16,19 @@ export const FeaturedNewsCard = ({
 }: FeaturedNewsCardProps) => {
   return (
     <Flex
-      h={variant === "big" ? "250px" : "177px"}
+      h={{ base: "auto", lg: variant === "big" ? "250px" : "277px" }}
       gap="24px"
-      direction={variant === "vertical" ? "column" : "row"}
+      direction={{
+        base: "column",
+        lg: variant === "vertical" ? "column" : "row",
+      }}
       transition="box-shadow 0.2s"
       _hover={{ boxShadow: "2px 2px 10px rgba(0, 0, 0, 0.135216);" }}
     >
       <Img
         src={content?.image ? content.image : "/pictures/news-img.png"}
-        h={
-          variant === "vertical"
-            ? "250px"
-            : variant === "big"
-            ? "100%"
-            : "160px"
-        }
-        w={
-          variant === "vertical"
-            ? "100%"
-            : variant === "big"
-            ? "600px"
-            : "200px"
-        }
+        h="100%"
+        w="100%"
       />
       <Flex flexDirection="column" gap={variant === "big" ? "20px" : "10px"}>
         {variant !== "vertical" && (
@@ -58,7 +49,7 @@ export const FeaturedNewsCard = ({
             {content?.title ? content.title : "LATEST"}
           </Text>
         )}
-        <Text fontSize="1.25rem" as="p">
+        <Text fontSize={{ base: "1rem", lg: "1.2rem" }} as="p">
           Parents sue Sisolak, CCSD over mask order in schools
         </Text>
         {content?.description && (
@@ -69,7 +60,7 @@ export const FeaturedNewsCard = ({
         <Flex
           gap="10px"
           align="center"
-          fontSize={{ lg: "0.875rem", sm: "0.75rem" }}
+          fontSize={{ lg: "0.875rem", base: "0.75rem" }}
         >
           <CalendarIcon /> Saturday, July 17, 2021
         </Flex>
