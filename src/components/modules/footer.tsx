@@ -104,19 +104,82 @@ export const Footer = () => {
                 <Text mb="12px" fontSize="1.25rem">
                   LAw USEFUL LINKS
                 </Text>
-                <HStack gap="80px" align="center">
-                  <Text>Dui defense</Text>
-                  <Text>Immigration</Text>
+                <HStack justify="space-between" w="100%" align="center">
+                  <Text
+                    transition="all 0.2s"
+                    _hover={{
+                      textDecoration: "underline",
+                      textDecorationColor: "#ffffff",
+                      opacity: 0.8,
+                    }}
+                  >
+                    Dui defense
+                  </Text>
+                  <Text
+                    transition="all 0.2s"
+                    _hover={{
+                      textDecoration: "underline",
+                      textDecorationColor: "#ffffff",
+                      opacity: 0.8,
+                    }}
+                  >
+                    Immigration
+                  </Text>
                 </HStack>
-                <HStack gap="40px">
-                  <Text>Criminal defense</Text>
-                  <Text>Estate planning</Text>
+                <HStack justify="space-between" w="100%" gap="10px">
+                  <Text
+                    transition="all 0.2s"
+                    _hover={{
+                      textDecoration: "underline",
+                      textDecorationColor: "#ffffff",
+                      opacity: 0.8,
+                    }}
+                  >
+                    Criminal defense
+                  </Text>
+                  <Text
+                    transition="all 0.2s"
+                    _hover={{
+                      textDecoration: "underline",
+                      textDecorationColor: "#ffffff",
+                      opacity: 0.8,
+                    }}
+                  >
+                    Estate planning
+                  </Text>
                 </HStack>
-                <HStack gap="56px">
-                  <Text>Personal injury</Text>
-                  <Text>Business law</Text>
+                <HStack justify="space-between" w="100%">
+                  <Text
+                    transition="all 0.2s"
+                    _hover={{
+                      textDecoration: "underline",
+                      textDecorationColor: "#ffffff",
+                      opacity: 0.8,
+                    }}
+                  >
+                    Personal injury
+                  </Text>
+                  <Text
+                    transition="all 0.2s"
+                    _hover={{
+                      textDecoration: "underline",
+                      textDecorationColor: "#ffffff",
+                      opacity: 0.8,
+                    }}
+                  >
+                    Business law
+                  </Text>
                 </HStack>
-                <Text>Family law</Text>
+                <Text
+                  transition="all 0.2s"
+                  _hover={{
+                    textDecoration: "underline",
+                    textDecorationColor: "#ffffff",
+                    opacity: 0.8,
+                  }}
+                >
+                  Family law
+                </Text>
               </VStack>
               <Center height="240px" mt="10px">
                 <Divider orientation="vertical" />
@@ -125,9 +188,36 @@ export const Footer = () => {
                 <Text mb="18px" fontSize="1.25rem" marginBottom="12px">
                   Freedom for nevada
                 </Text>
-                <Text>Videos</Text>
-                <Text>Freedom</Text>
-                <Text>Américas Frontline Doctors</Text>
+                <Text
+                  transition="all 0.2s"
+                  _hover={{
+                    textDecoration: "underline",
+                    textDecorationColor: "#ffffff",
+                    opacity: 0.8,
+                  }}
+                >
+                  Videos
+                </Text>
+                <Text
+                  transition="all 0.2s"
+                  _hover={{
+                    textDecoration: "underline",
+                    textDecorationColor: "#ffffff",
+                    opacity: 0.8,
+                  }}
+                >
+                  Freedom
+                </Text>
+                <Text
+                  transition="all 0.2s"
+                  _hover={{
+                    textDecoration: "underline",
+                    textDecorationColor: "#ffffff",
+                    opacity: 0.8,
+                  }}
+                >
+                  Américas Frontline Doctors
+                </Text>
               </VStack>
               <Center height="240px" mt="10px">
                 <Divider orientation="vertical" />
@@ -173,7 +263,14 @@ export const Footer = () => {
                   LAw USEFUL LINKS
                 </Text>
                 <HStack w="100%" justify="space-between" align="center">
-                  <Text>Dui defense</Text>
+                  <Text
+                    _hover={{
+                      textDecoration: "overline",
+                      textDecorationColor: "red",
+                    }}
+                  >
+                    Dui defense
+                  </Text>
                   <Text>Immigration</Text>
                 </HStack>
                 <HStack w="100%" justify="space-between">
