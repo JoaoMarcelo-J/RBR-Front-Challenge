@@ -35,7 +35,7 @@ export const Footer = () => {
       <Flex>
         <Img src="/pictures/footer.png" objectFit="contain" w="100%" h="100%" />
       </Flex>
-      <Box bg="#281937" h="1400px">
+      <Box bg="#281937" h={{ base: "1300px", lg: "800px" }}>
         <Flex
           m="0 auto"
           maxW="1480px"
