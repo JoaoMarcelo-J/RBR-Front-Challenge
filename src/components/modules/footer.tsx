@@ -62,8 +62,18 @@ export const Footer = () => {
               </Text>
             </Box>
             <HStack>
-              <Input placeholder="Your name" size="lg" borderRadius="0" />
-              <Input placeholder="Your Email" size="lg" borderRadius="0" />
+              <Input
+                placeholder="Your name"
+                size="lg"
+                borderRadius="0"
+                color="#fff"
+              />
+              <Input
+                placeholder="Your Email"
+                size="lg"
+                borderRadius="0"
+                color="#fff"
+              />
               <Button
                 _hover={{ bg: "#fff", color: "#281937" }}
                 transition="all 0.2s"
