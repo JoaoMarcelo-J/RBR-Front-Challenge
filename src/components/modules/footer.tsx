@@ -35,7 +35,7 @@ export const Footer = () => {
       <Flex>
         <Img src="/pictures/footer.png" objectFit="contain" w="100%" h="100%" />
       </Flex>
-      <Box bg="#281937" h={{ base: "1300px", lg: "800px" }}>
+      <Box bg="#281937" h="auto">
         <Flex
           m="0 auto"
           maxW="1480px"
@@ -225,7 +225,7 @@ export const Footer = () => {
               </VStack>
             </Flex>
           )}
-          <Text align="center" color="#fff" mt="20px">
+          <Text align="center" color="#fff" marginY="20px">
             © COPYRIGHT 2021. ALL RIGHTS RESERVED.
           </Text>
         </Flex>
